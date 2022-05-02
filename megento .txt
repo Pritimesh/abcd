@@ -1,0 +1,72 @@
+Commonds Putty:-
+
+
+php bin/magento setup:upgrade
+php bin/magento setup:static-content:deploy -f
+php bin/magento cache:flush 
+
+
+SSH Details
+FTP host server : 	5acbf1a17b.nxcli.net
+FTP username	: 	a5677e1b_1
+Password 		: 	SabresHuntsLameQuotas
+
+cd 0ca422272d.nxcli.net 
+
+******** database *********
+
+	
+ 	mysql -u a5677e1b_server2 -p
+
+	password :- LampsJettyUvulaSibyl
+
+	use a5677e1b_server2;
+
+	describe """ table name """
+-----------------------------------------------------------
+
+'db' => [
+        'table_prefix' => '',
+        'connection' => [
+            'default' => [
+                'host' => 'localhost',
+                'dbname' => a5677e1b_server2,
+                'username' => 'a5677e1b_server2',
+                'password' => 'LampsJettyUvulaSibyl',
+                'model' => 'mysql4',
+                'engine' => 'innodb',
+                'initStatements' => 'SET NAMES utf8;',
+                'active' => '1',
+                'driver_options' => [
+                    1014 => false
+                ]
+            ]
+        ]
+    ],
+
+
+------------------------------------------
+
+
+
+
+
+
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$xmlLayout = $objectManager->get(\Magento\Framework\App\View::class);
+var_dump($xmlLayout->getLayout()->getUpdate()->getHandles());
+
+
+
+if product is not shown in frontend
+
+php bin/magento indexer:status
+php bin/magento indexer:reset
+php bin/magento indexer:reindex
+
+
+
+
+
+
+
